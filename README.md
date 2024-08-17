@@ -5,10 +5,8 @@
 AppName/
 │
 ├── WebContent/
-│   ├── META-INF/
 │   ├── WEB-INF/
 │   │   ├── web.xml
-│   │   └── lib/
 │   └── app.html
 │
 └── src/
@@ -22,13 +20,13 @@ AppName/
 
 ### 2. WebContent/
 
-#### This directory holds the web-related files such as HTML pages, JSP files, and configuration files that are served to the client (browser).
+#### This directory holds the web-related files such as HTML pages, JSP files, and configuration files served to the client (browser).
 #### WEB-INF/
 ##### This directory contains configuration files and libraries that are necessary for the web application but are not directly accessible from the web. Only the server can access files in this directory.
 #### web.xml
-##### This is the deployment descriptor for the web application. It defines the servlet mappings, initialization parameters, and other configuration settings for the web application. It is crucial for configuring how the servlets interact with the web application.
+##### This is the deployment descriptor for the web application. It defines the servlet mappings, initialization parameters, and other configuration settings for the web application. It is crucial to configure how the servlets interact with the web application.
 #### lib/
-##### This directory holds JAR files that the web application depends on. These JAR files are libraries used by the servlets or other components of the application. For example, if you are using external libraries, you would place their JAR files here.
+##### This directory holds JAR files on which the web application depends. These JAR files are libraries used by the servlets or other components of the application. For example, if you are using external libraries, you would place their JAR files here.
 #### app.html
 ##### This is an HTML file that provides the user interface for the calculator application. It contains a form where users can input numbers and select an arithmetic operation.
 ### 3. src/
